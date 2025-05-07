@@ -343,3 +343,181 @@ footer {
     margin-left: 10px;
     vertical-align: middle;
 }
+
+/* mobile-adaptation */
+
+@media screen and (max-width: 768px) {
+    #main-header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 20px;
+    }
+
+    #main-header-menu {
+        margin: 20px 0;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    #main-header-phone {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+
+    #main-title {
+        font-size: 28px;
+        line-height: 35px;
+    }
+
+    #main-items .main-item span {
+        font-size: 16px;
+    }
+
+    .button {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    #service-items {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    #doctors-images {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    #footer-container {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+        padding: 30px;
+    }
+
+    #footer-time,
+    #footer-address,
+    #footer-phone {
+        margin-left: 0;
+    }
+
+    #reserve-form {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    #reserve-form input {
+        width: 100%;
+        margin-right: 0;
+    }
+
+    #reserve-form button {
+        width: 100%;
+    }
+}
+
+
+@media (max-width: 768px) {
+    /* Общие отступы и контейнер */
+    #main-container,
+    #about-container,
+    #services-container,
+    #reserve-container,
+    #doctors-container,
+    #footer-container {
+        padding: 0 20px;
+        max-width: 100%;
+    }
+
+    /* Хедер */
+    #main-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #main-header-menu {
+        margin: 20px 0;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    #main-header-phone {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+
+    /* Основной заголовок и блоки */
+    #main-title {
+        font-size: 26px;
+    }
+
+    #main-items .main-item span {
+        font-size: 16px;
+    }
+
+    .button {
+        width: 100%;
+    }
+
+    /* О нас */
+    #about-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-item {
+        max-width: 100%;
+    }
+
+    #about-quote {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #about-quote-text {
+        margin-left: 0;
+        margin-top: 20px;
+    }
+
+    /* Услуги */
+    #service-items {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    @media (max-width: 480px) {
+        #service-items {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    /* Форма записи */
+    #reserve-form {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    #reserve-form input,
+    #reserve-form button {
+        width: 100%;
+    }
+
+    /* Доктора */
+    #doctors-images {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    /* Футер */
+    #footer-container {
+        flex-direction: column;
+        gap: 20px;
+        align-items: flex-start;
+    }
+
+    #footer-time,
+    #footer-address,
+    #footer-phone {
+        margin-left: 0;
+    }
+}
